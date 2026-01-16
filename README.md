@@ -1,8 +1,8 @@
-Project Name: Personal Landing Page
+# Personal Landing Page
+This is my first project as part of my journey to becoming a professional full-stack developer.
 
-description: It is the first website i create on my journey to become a professional developer.
+## Technologies Used
+- HTML
 
-technologies used:
--- So far only HTML
-
-Goal for the project: Polish my basic coding skills
+## Project Goal
+Build strong fundamentals and professional coding habits from day one.
