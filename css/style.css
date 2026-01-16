@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffe6c2;
+}
+
+/* Header styles */
+
+header {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigation styles */
+
+nav {
+  padding: 5px;
+  margin: 5px;
+  margin-left: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: purple;
+}
+
+/* Sections styles */
+
+section {
+  padding: 20px 20px;
+  border-top:  1px solid black;
+}
+
+section p {
+  text-indent: 20px;
+}
+
+p, li {
+  font-size: larger;
+}
+
+/* Footer styles */
+
+footer {
+  padding: 15px;
+  border-top: 3px solid black;
+  background-color: black;
+  color: #ffe6c2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Media styles */
+
+@media (max-width: 768px) {
+  /* Header styles */
+
+  header h1 {
+    margin-bottom: 0;
+  }
+
+  /* Navigation styles */
+
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  a {
+    font-size: larger;
+  }
+  
+  /* Sections styles */
+
+  h2, p, li {
+    font-size: x-large;
+  }
+
+  #contact h2 a {
+    font-size: x-large;
+  }
+
+  section {
+    padding-left: 10px;
+    padding-right:10px;
+  }
+}
