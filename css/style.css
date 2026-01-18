@@ -90,6 +90,14 @@ p, li {
   transform: rotate(180deg); /* Need some more guidance here */
 }
 
+.content {
+  display: none;
+}
+
+.contentShown {
+  display: block;
+} 
+
 /* Footer styles */
 
 footer {
