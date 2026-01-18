@@ -45,6 +45,51 @@ p, li {
   font-size: larger;
 }
 
+/* Wrapper & Toggle Button Styles */
+.TBDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease; /* Need some more guidance here */
+}
+
+.toggleBtn, .btnToggled {
+  background-color: #fde3bf;
+  border: 1px solid #d8c3a5;
+  border-radius: 4px;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2); /* Need some more guidance here */
+  width: 30px;
+  height: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleBtn:hover, .btnToggled:hover {
+  background-color: rgb(83, 83, 83); /* slightly darker */
+  color:#fde3bf;
+  border-color: none;
+}
+
+.toggleBtn:active, .btnToggled:active {
+  box-shadow: inset 0 3px 4px rgba(0,0,0,0.4); /* Need some more guidance here */
+  transform: translateY(1px); /* Need some more guidance here */
+}
+
+.btnToggled .arrow {
+  transform: rotate(180deg); /* Need some more guidance here */
+}
+
 /* Footer styles */
 
 footer {
