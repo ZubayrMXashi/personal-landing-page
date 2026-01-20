@@ -43,9 +43,27 @@ const content = document.getElementsByClassName("content")[0];
 // console.dir(content); // Just keeping this here for keeps sake
 
 // Deal with the Logic behind the button click
-toggleBtn.onclick = () => {
-  console.log("button clicked"); // Console log the button being clicked
-  toggleBtn.classList.toggle("btnToggled"); // Toggle the class name for the button when it is clicked
+// toggleBtn.onclick = () => {
+//   console.log("button clicked"); // Console log the button being clicked
+//   toggleBtn.classList.toggle("btnToggled"); // Toggle the class name for the button when it is clicked
 
-  content.classList.toggle("contentShown"); // Toggle the class name for the content to show it
+//   content.classList.toggle("contentShown"); // Toggle the class name for the content to show it
+// };
+
+let isSkillsOpen = false;
+
+const updateUI = (isSkillsOpen) => {
+  console.log(isSkillsOpen);
+  if (isSkillsOpen) {
+    toggleBtn.classList.add("btnToggled");
+    content.classList.add("contentShown");
+  } else {
+    toggleBtn.classList.remove("btnToggled");
+    content.classList.remove("contentShown");
+  }
+};
+
+toggleBtn.onclick = () => {
+  isSkillsOpen = !isSkillsOpen;
+  updateUI(isSkillsOpen);
 };
