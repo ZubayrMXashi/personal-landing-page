@@ -90,13 +90,24 @@ p, li {
   transform: rotate(180deg); /* Need some more guidance here */
 }
 
+.toggleBtn:focus-visible {
+  outline: 2px solid black;
+}
+
+/* Content Styles */
 .content {
-  display: none;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  margin: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.4s ease;
 }
 
 .contentShown {
-  display: block;
-} 
+  max-height: 110px;
+  opacity: 1;
+  margin: 16px 0px;
+}
 
 /* Footer styles */
 
